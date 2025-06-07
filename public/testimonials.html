@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials - PlatformDataSecurityBabies</title>
+  <link rel="stylesheet" href="styles.css">
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>PlatformDataSecurityBabies</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="videos.html">Videos</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Testimonials</h2>
+      <div id="testimonial-root"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 PlatformDataSecurityBabies</p>
+  </footer>
+  <script type="text/javascript">
+    const testimonials = [
+      { name: 'Alice', text: 'This group keeps me sharp and motivated!' },
+      { name: 'Bob', text: 'Fantastic community and great resources.' },
+      { name: 'Carol', text: 'I have learned so much about data security here.' }
+    ];
+    function App() {
+      return React.createElement('ul', null,
+        testimonials.map(t => React.createElement('li', { key: t.name }, `${t.name}: ${t.text}`))
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('testimonial-root')).render(React.createElement(App));
+  </script>
+</body>
+</html>
