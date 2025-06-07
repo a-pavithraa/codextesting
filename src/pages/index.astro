@@ -1,0 +1,62 @@
+---
+import Testimonials from '../components/Testimonials.jsx';
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlatformDataSecurityBabies</title>
+  </head>
+  <body class="min-h-screen flex flex-col font-sans bg-gray-50">
+    <nav class="bg-blue-900 text-white p-4 fixed w-full top-0 z-10">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#home" class="font-bold text-lg">PlatformDataSecurityBabies</a>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-300">About Us</a></li>
+          <li><a href="#videos" class="hover:text-blue-300">Videos</a></li>
+          <li><a href="#testimonials" class="hover:text-blue-300">Testimonials</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container mx-auto flex-1 pt-20 pb-10" id="home">
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-2">Welcome</h2>
+        <p class="mb-4">
+          This is a global WhatsApp group of IT professionals around the world. The members of the group go through very harsh criticism that is blunt and ruthless if they fail to meet the learning schedule. We do enjoy good jokes and have fun in the group. In order to be part of this group the above is mandatory and you should not have an ego. Everyone is learning in the group!
+        </p>
+        <p>
+          This group is moderated by <a href="https://www.linkedin.com/in/joem75/" target="_blank" rel="noopener" class="text-blue-600 underline">Joe M</a> popularly known as JoeVirus among the group members. Joe's favorite rant is "You are as good as your last movie. Keep your brags fresh." Keep upskilling!
+        </p>
+      </section>
+      <section id="about" class="mb-8">
+        <h2 class="text-2xl font-semibold mb-2">About Us</h2>
+        <p>The PlatformDataSecurityBabies group was started in 2019. Our mission is to share knowledge about data security and help members upskill.</p>
+        <p>We are a global community of data security professionals and enthusiasts who believe in continuous learning.</p>
+      </section>
+      <section id="videos" class="mb-8">
+        <h2 class="text-2xl font-semibold mb-2">Videos</h2>
+        <p class="mb-4">Latest videos from our YouTube channel:</p>
+        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/JrjufdMBhcU" title="AWS Landing Zone" allowfullscreen></iframe>
+          <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/uNcNrm4P6g0" title="LinkedIn Renovation Session" allowfullscreen></iframe>
+          <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/UecCMGZKo9g" title="Joe on upskilling Journey" allowfullscreen></iframe>
+          <iframe class="w-full aspect-video rounded shadow" src="https://www.youtube.com/embed/lVw_qW2rgB8" title="Group Introduction" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section id="testimonials" class="mb-8">
+        <h2 class="text-2xl font-semibold mb-2">Testimonials</h2>
+        <Testimonials />
+      </section>
+      <section id="contact" class="mb-8">
+        <h2 class="text-2xl font-semibold mb-2">Contact Us</h2>
+        <p>Connect with us on <a href="https://www.linkedin.com/company/31300296" target="_blank" rel="noopener" class="text-blue-600 underline">LinkedIn</a>.</p>
+        <p>Sign up using our <a href="https://docs.google.com/forms/d/1hvP3jMDt5S7UFub0t-48V2ALb_opJOixBRWX0uHHXf4/viewform?pli=1&pli=1&edit_requested=true" target="_blank" rel="noopener" class="text-blue-600 underline">Google Form</a>.</p>
+      </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+      <p>&copy; 2025 PlatformDataSecurityBabies</p>
+    </footer>
+  </body>
+</html>
