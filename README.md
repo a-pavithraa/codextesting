@@ -1,14 +1,20 @@
 # PlatformDataSecurityBabies Website
 
-This repository contains a simple static website generated from `prd.md`.
-The entire site is a single HTML page located in the `public/` directory.
-Navigation links at the top of the page scroll to individual sections:
+This project contains a small site built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/). The content comes from `prd.md` and is rendered as a single page.
 
-- **Home** – Introduction and overview of the group.
-- **About Us** – Mission and history.
-- **Videos** – Embedded YouTube videos.
-- **Testimonials** – Sample testimonials rendered using React from a CDN.
-- **Contact** – Links to the LinkedIn page and Google signup form.
+## Running locally
 
-The site uses plain HTML, CSS and a small React component for the
-testimonials section, so it can be hosted on any static web host.
+```bash
+npm install
+npm run dev
+```
+
+The site will be available on `http://localhost:4321` by default.
+
+## Building for production
+
+```bash
+npm run build
+```
+
+The static output is generated in the `dist/` folder.
